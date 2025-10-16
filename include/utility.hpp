@@ -2,6 +2,9 @@
 #define CONTACTMAP_CALCULATION_UTILITY_HPP
 #include <random>
 #include <cstring>
+#include <array>
+#include <vector>
+#include <string>
 
 namespace Utility
 {
