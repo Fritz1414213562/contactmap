@@ -1,6 +1,6 @@
 #ifndef CONTACTMAP_PARSE_TARGET_INDICES_OPTION
 #define CONTACTMAP_PARSE_TARGET_INDICES_OPTION
-#include<TryAmp/core/core.hpp>
+#include "utility.hpp"
 #include<iostream>
 #include<fstream>
 #include<vector>
@@ -12,7 +12,7 @@ std::vector<int> parse_indices_in(const std::string& fname) {
 	std::vector<int> retval;
 	while (std::getline(ifs, line)) {
 		if (line.empty()) continue;
-		else if (Amp::strmanage::startswith(line, "#")) continue;
+		else if (Utility::startswith(line, "#")) continue;
 		else {
 			retval.push_back(std::stoi(line));
 		}
